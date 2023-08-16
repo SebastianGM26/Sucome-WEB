@@ -1,0 +1,48 @@
+@font-face {
+    font-family: RubikMonoOne-Regular;
+    src: url("/Fuentes/RubikMonoOne.ttf");
+}
+
+@font-face {
+    font-family: Rubik-VariableFont_wght;
+    src: url("/Fuentes/Rubik.ttf");
+}
+@font-face {
+    font-family:Arimo ;
+    src: url("/Fuentes/Arimo.ttf");
+}
+
+h1{
+    font-size: 40px;
+    font-family:RubikMonoOne-Regular;
+    color: #659856;
+    text-align: center;
+    letter-spacing:0px;
+}
+h2{
+    font-size: 28px;
+    font-family: RubikMonoOne-Regular;
+    color: white;
+}
+h3{
+    font-size: 30px;
+    font-family:Rubik-VariableFont_wght ;
+    text-align: center;
+}
+p{
+    font-size: 24px;
+    font-family: Arimo;
+    line-height: 30px;
+    text-align: justify;
+}
+label{
+    font-size: 20px;
+    font-family: Arimo;
+    line-height: 30px;
+}
+a{
+    font-size: 20px;
+    font-family: Arimo;
+    color: rgb(255, 255, 255);
+    
+}

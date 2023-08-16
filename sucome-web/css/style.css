@@ -1,0 +1,1219 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height:100%;
+  font-size: 16px; /*base para la unidad REM*/
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Rubik-Mono-One;
+  color: #659856;
+  text-align: center;
+  letter-spacing: 0px;
+}
+h2 {
+  /* font-size: 28px; */
+  font-size: 36px;
+  font-family: RubikMontserrat, sans-serif;
+  font-weight: 600;
+}
+h3 {
+  font-size: 30px;
+  font-family: Rubik;
+  font-weight: 500;
+  text-align: center;
+}
+p {
+  font-size: 24px;
+  font-family: Arimo;
+  line-height: 30px;
+  text-align: justify;
+}
+label {
+  font-size: 20px;
+  font-family: Arimo;
+  line-height: 30px;
+}
+a {
+  font-size: 20px;
+  font-family: Arimo;
+  color: rgb(255, 255, 255);
+}
+
+
+a[class^='contacto_'] {
+  color: inherit !important;
+}
+
+/* Creación de nav */
+.nav_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+/* Ajuste de tamaño para el logo */
+.nav_info img {
+  width: 100px;
+}
+
+.nav_titulo {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.nav_iconMenu {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* Sección del menu */
+.menu {
+  background-color: #252a2a;
+  text-align: center;
+  list-style: none;
+  padding: 1rem 0;
+  transition: all 0.5s ease;
+}
+
+.menu li {
+  width: 15.125rem;
+  padding: 0.35rem 0;
+  margin: 0 auto 1.93rem;
+}
+
+.menu li:active,
+.menu li.active {
+  border-bottom: 2px solid #d5ed43;
+}
+
+.menu a:active {
+  color: #d5ed43;
+}
+
+.menu li:last-child {
+  margin: 0 auto 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.25rem;
+  -webkit-text-stroke: 0.5px #000;
+  font-family: "Rubik", sans-serif;
+}
+
+.close_menu {
+  display: none;
+  height: 0;
+  padding: 0;
+}
+
+/* desglose de menu SERVICIOS*/
+.menu_Servicios {
+  height: auto;
+  background-color: #232526;
+  padding: 2rem;
+  transition: all 0.5s ease;
+}
+
+/***************** AQUI ES EL ESTILO DE LA ETIQUETA li DE SERVICIOS*********************/
+.menu_Servicios li {
+  list-style: none;
+  border-radius: 0.5rem;
+  background-color: #4eb09a;
+  height: 3.5rem;
+  margin: 1.5rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu_Servicios li:first-child {
+  border-bottom: none;
+}
+
+.menu li:active {
+  border-bottom: none;
+}
+
+.menu_Servicios a {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.menu_ServiciosClose {
+  height: 0;
+  padding: 0;
+  display: none;
+}
+
+/*Creación de banner*/
+.banner-content {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.images {
+  height: 100%;
+  width: 100%;
+}
+
+.images img {
+  height: 100%;
+  width: 100%;
+}
+
+.banner-content .slide {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border: 2px solid #fff;
+}
+
+.banner-content .slide:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.slide span {
+  font-size: 25px;
+  color: #fff;
+  line-height: 31px;
+  cursor: pointer;
+}
+
+.banner-content .right {
+  right: 0;
+}
+
+.banner_btns {
+  display: none;
+  justify-content: center;
+}
+
+.banner_btns button {
+  margin: 1rem 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #000000;
+  background-color: #4eb09a;
+  color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*Creación de descripción-nosotros*/
+.description_nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.videoCompu {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(50%) brightness(40%);
+}
+.videoCelular {
+  width: 100%;
+  display: none;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(50%) brightness(40%);
+
+}
+.textodentro {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: auto;
+  padding: 8rem 4rem;
+  
+}
+
+.description_nosotros h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.description_nosotros p {
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+  margin: 4rem 4rem;
+  text-align: justify;
+}
+
+.nosotros_btn {
+  background-color: #4eb09a;
+  border-radius: 5px;
+  padding: 0.5rem 3.2rem;
+  text-decoration: none;
+  align-items: center;
+}
+
+.nosotros_btn:hover {
+  background-color: #929791;
+  cursor: pointer;
+  background: #1d976c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #93f9b9, #1d976c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #93f9b9, #1d976c);
+}
+
+/* Creacion de area de servicios -------------------------------------------*/
+/* Ajuste de imagenes  */
+.servicio1 img {
+  padding: 15px 0;
+  width: 100px;
+  height: auto;
+}
+
+/* Caja flexible de los servicios */
+.servicios_destacados {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 50px 0px 50px 0px;
+}
+.servicios_destacados p {
+  text-align: justify;
+  padding: 1rem 3rem;
+}
+/* Acomodar servicio al centro y separado */
+.servicio1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  margin: 15px 0;
+  padding: 0 4rem;
+}
+/* Listas para los elementos de las cajas */
+#lista3 {
+  counter-reset: li;
+  list-style: none;
+  font: 15px "trebuchet MS", "lucida sans";
+  padding: 0;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+#lista3 ol {
+  margin: 0 0 0 2em;
+}
+
+#lista3 li {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 0.8em;
+  margin: 0.5em 0 0.5em 2.5em;
+  background: #f5f5f5;
+  color: #444;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+#lista3 li:hover {
+  background: #eee;
+}
+
+#lista3 li:before {
+  content: counter(li, decimal);
+  counter-increment: li;
+  position: absolute;
+  top: -3px;
+  left: -40px;
+  height: 2em;
+  width: 2em;
+  padding: 5px;
+  color: #fff;
+  background: #659856;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+
+#lista3 li:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  margin-top: -0.3rem;
+  transition: all 0.3s ease-out;
+  margin-left: -4.5px;
+  top: 6px;
+}
+
+#lista3 li:hover:after {
+  left: -0.5em;
+  border-left-color: #659856;
+}
+/* Seccion COTIZAR ---------------------------------------*/
+.cotizar {
+  background-image: url(/img/Verde.jpg?v=1.0);
+  background-size: cover;
+  height: 13rem;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: #fff;
+  font-family: "Arimo", sans-serif;
+}
+
+.cotizar h2 {
+  text-transform: uppercase;
+}
+
+.cotizar p {
+  margin-top: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.cotizar a {
+  background-color: #4eb09a;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+
+.cotizar a:hover {
+  background-color: #929791;
+  cursor: pointer;
+  background: #1d976c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #93f9b9, #1d976c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #93f9b9, #1d976c);
+}
+
+/* Creacion de seccion contactanos -----------------------------------------------------*/
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  background-image: url(/img/blancogris.png?v=1.0);
+  background-size: cover;
+}
+
+/* Centrar contenido de las tarjeta */
+.contacto1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 40px 0;
+  padding: 0 30px;
+}
+.contacto1 i {
+  padding: 20px 0;
+}
+
+/* Espaciado entre las imagenes y texto */
+.contacto1 img {
+  padding: 10px 0;
+}
+
+/* Creacion de nosotros -------------------------------------------------------------------- */
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
+/* Seccion nosotros con imagen y texto blanco */
+.nosotros1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 25px 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/nosotrosbg.jpeg?v=1.0");
+}
+
+/* Cambiar color al titulo nosotros */
+.nosotros1 h2 {
+  color: rgb(255, 255, 255);
+  margin: 40px 0;
+  font-weight: bold;
+}
+/* Cambiar color al parrafo nosotros */
+.nosotros1 p {
+  color: rgb(255, 255, 255);
+  margin: 0 4rem 3rem 4rem;
+  text-align: justify;
+  font-weight: bold;
+}
+/* Centrar contenido de las tarjeta mision y vision*/
+.nosotros2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 50%;
+  margin: 30px 0;
+  padding: 0 30px;
+}
+
+/* Espaciado entre las imagenes y texto */
+.nosotros2 img {
+  padding: 20px 0;
+  height: 300px;
+  width: 100%;
+}
+.nosotros2 p {
+  text-align: justify;
+  padding: 0 4rem;
+}
+.nosotros_padre {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 50px 0px;
+}
+.nosotros_padre img {
+  height: 400px;
+  width: 480px;
+  max-width: 100%;
+}
+/*Creacion de pie de pagina ---------------------------------------------------------*/
+.linea {
+  width: 100%;
+  height: 10px;
+  background-color: #0d523a;
+}
+footer {
+  background: #111;
+  height: auto;
+  width: 100%;
+  /* padding-top: 40px; */
+  color: #fff;
+}
+
+.footer-marcas {
+  background-color: white;
+  padding: 60px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-marcas h3 {
+  margin: 0px 0px 20px 0px;
+  color: #659856;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-marcas .marcas .imagen-marca {
+  margin: 0px 10px;
+  width: 128px;
+}
+
+
+/* Hacer el contenedor del footer con flexbox  */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Estilo del titulo grupo sucome */
+.footer-content h3 {
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+/* Dar estilo al texto del footer */
+.footer-content p {
+  margin: 10px auto;
+  line-height: 28px;
+  color: #cacdd2;
+  text-align: center;
+}
+
+/* Hacer flexible el contendor de los icones de redes sociales */
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+/* Espacio entre los iconos */
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+
+/* Efecto sobre los iconos de redes sociales */
+.socials a:hover i {
+  color: aqua;
+}
+
+/* Agregar parte derechos reservados */
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0px;
+}
+
+/* Estilos del cotizador ------------------------------------------------------------------*/
+/* Titulo de cotizador */
+#form_cotizacion h2 {
+  text-align: center;
+  padding: 45px 0 20px 0;
+  color: rgb(254, 254, 254);
+}
+#form_cotizacion p {
+  font-size: 20px;background-size: cover;
+  background-position: center;
+  text-align: justify;
+  padding: 10px 0;
+  width: 80%;
+  color: rgb(254, 254, 254);
+}
+/* Dar estilo al background del cotizador */
+form {
+background-color: #0d523a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Texto fuera de la caja  */
+#form_cotizacion label {
+  color: #fefeff;
+  display: block;
+  font-size: 20px;
+  height: 16px;
+  margin: 5px 0 15px 0;
+  width: 65%;
+}
+
+/* Cajas del formulario */
+#form_cotizacion input,
+select {
+  margin: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 65%;
+  box-sizing: border-box;
+  border: rgb(255, 254, 254) 2px solid;
+  border-radius: 8px;
+  color: #161617;
+  font-size: 1em;
+  resize: none;
+  padding: 10px 10px;
+}
+/* Boton de enviar en el formulario */
+#form_cotizacion .enviar {
+  width: 10%;
+  padding: 7px 0;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.enviar {
+  background-color: #4eb09a;
+  border: none !important;
+  color: #ffffff !important;
+}
+.enviar:hover {
+  background-color: #929791;
+  cursor: pointer;
+  background: #1d976c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #93f9b9, #1d976c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #93f9b9,
+    #1d976c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*****************************Estilos para las alertas**************************************/
+label#puesto-error.error,
+label#nombre-error,
+label#empresa-error,
+label#tipo_obra-error,
+label#whatsapp-error,
+label#correo-error,
+label#zona_geografica-error,
+label#metros-error,
+label#mensaje-error {
+  color: #b10d0d;
+  background: rgb(238, 162, 162);
+  border-radius: 3px;
+  box-shadow: 3px 5px 5px black;
+  width: 65%;
+  padding: 5px;
+  height: 100%;
+  text-align: start;
+  font-size: 18px;
+  font-family: Arimo;
+  line-height: 30px;
+}
+textarea {
+  width: 65%;
+  height: 150px;
+}
+/****** PÁGINA SERVICIOS *******/
+.main-servicios section {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.main-servicios h2 {
+  color: #fff;
+  font-size: 4rem;
+}
+
+.servicios-info p {
+  padding: 2rem 2rem;
+}
+
+.carac-beneficios {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.carac-beneficios h2 {
+  color: #4eb09a;
+  text-align: center;
+}
+
+.beneficios {
+  margin-top: 4rem;
+  text-align: justify;
+  width: 100%;
+  /* margin:2%;
+  padding:20px; */
+}
+
+.caracteristicas {
+  text-align: justify;
+  width: 100%;
+  /* margin:2%;
+  padding:20px; */
+}
+
+.caracteristicas .descripcion-500 {
+  color: rgb(100 116 139/1);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.img-carac,
+.img-benef {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.img-carac i,
+.img-benef i {
+  /* font-size: 1.8rem; */
+  margin-right: 1rem;
+}
+
+.iniciar-proyecto {
+  height: 13rem;
+  background-image: url(/img/bg-iniciar-proyecto.png?v=1.0);
+  background-size: cover;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.iniciar-proyecto h2 {
+  color: #fff;
+}
+
+.iniciar-proyecto p {
+  color: #fff;
+  margin-top: 0.7rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.iniciar-proyecto a {
+  background-color: #4eb09a;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Arimo", sans-serif;
+  margin-top: 1.2rem;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.iniciar-proyecto a:hover {
+  background-color: #929791;
+  cursor: pointer;
+  background: #1d976c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #93f9b9, #1d976c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #93f9b9, #1d976c);
+}
+
+/* Uso de media query -----------------------------------------------------------*/
+
+@media (max-width: 600px) {
+  /* Acomodar servicio al centro y separado, que solo se vea 1 */
+  .servicio1 {
+    width: 100%;
+  }
+  /* Acomodar contacto al centro y separado, que solo se vea 1 */
+  .contacto1 {
+    width: 100%;
+  }
+  /* Centrar contenido de las tarjeta */
+  .nosotros2 {
+    width: 100%;
+  }
+  .nosotros2 p {
+    padding: 5px 0;
+  }
+  /* Espaciado entre las imagenes y texto */
+  .nosotros2 img {
+    height: 400px;
+  }
+  /* Hacer pequeños SUCOME en mobile */
+  .nav_titulo {
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+  }
+  /* Ajuste de tamaño para el logo */
+  .nav_info img {
+    width: 50px;
+  }
+  label#puesto-error.error,
+  label#nombre-error,
+  label#empresa-error,
+  label#tipo_obra-error,
+  label#whatsapp-error,
+  label#correo-error,
+  label#zona_geografica-error,
+  label#metros-error,
+  label#mensaje-error {
+    width: 50%;
+  }
+  /* Hacer grande el boton enviar */
+  #form_cotizacion .enviar {
+    width: 30%;
+  }
+  /* Ajustar tamaño del texto */
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  /* Agrandar imagen de quieres cotizar */
+  .cotizar {
+    height: 17rem;
+  }
+  /* Tarjeta de servicios ajustar texto */
+  .servicios_destacados p {
+    padding: 0.5rem 0;
+  }
+  .servicio1 {
+    padding: 0 2rem;
+  }
+
+  .nosotros_padre {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nosotros_padre img {
+    height: 400px;
+    width: 400px;
+    max-width: 100%;
+  }
+  .image-slide1 {
+    src: url(/img/Banner-4.jpeg?v=1.0);
+  }
+  /* Area del video en telefono */
+
+ 
+  /* Cambiar color al parrafo nosotros */
+  .nosotros1 p {
+    color: white;
+    margin: 0 2rem 3rem 2rem;
+
+  }
+  .textodentro {
+    padding: 4rem 1rem;
+    height: auto;
+
+  }
+  /* Video en telefono */
+  .videoCelular {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: saturate(50%) brightness(40%);
+  }
+  .videoCompu{
+    display: none;
+  }
+  .description_nosotros p {
+    padding:0;
+    margin: 2rem 2rem;
+  }
+  /* estilo en responsivo para el listado de los servicios */
+  #lista3 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* estilo en responsivo para el listado de los servicios */
+  #lista3 {
+    width: 70%;
+  }
+
+  .banner-content {
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .banner-content .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+  }
+
+  .banner-content .slide:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+
+  .slide span {
+    font-size: 35px;
+    color: #fff;
+    line-height: 41px;
+    cursor: pointer;
+  }
+
+  .banner-content .right {
+    right: 0;
+  }
+
+  .cotizar {
+    height: 20rem;
+    padding: 5rem 1rem;
+  }
+
+  .cotizar h2 {
+    font-size: 2rem;
+  }
+
+  .cotizar p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    line-height: 1.2;
+  }
+
+  .cotizar a {
+    padding: 0.7rem 2rem;
+    margin-top: 2rem;
+  }
+
+  /* Sección del menu */
+  .nav_titulo {
+    margin-left: 15rem;
+  }
+
+  .nav_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 70%;
+  }
+
+  .nav_iconMenu {
+    visibility: hidden;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+  }
+
+  .menu {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 3rem;
+    width: 40%;
+    height: auto;
+    transition: none;
+    position: relative;
+  }
+
+  .menu li {
+    width: auto;
+    height: 25px;
+    padding: 0;
+    margin: 0 1rem;
+  }
+
+  .menu li:active,
+  .menu li.active {
+    border-bottom: 2px solid #4eb09a;
+  }
+
+  .menu a:hover {
+    color: #4eb09a;
+  }
+
+  .menu li:last-child {
+    margin: 0;
+  }
+
+  .menu a {
+    color: #000;
+    font-size: 1rem;
+    -webkit-text-stroke: 0;
+    font-family: "Arimo", sans-serif;
+  }
+
+  .close_menu {
+    display: flex;
+  }
+
+  /* desglose de menu SERVICIOS*/
+  .menu_Servicios {
+    height: auto;
+    transition: all 0.5s ease;
+    background-color: rgba(199, 199, 199, 0.842);
+    position: absolute;
+    right: 4rem;
+  }
+
+  /***************** AQUI ES EL ESTILO DE LA ETIQUETA li DE SERVICIOS*********************/
+  .menu_Servicios li {
+    list-style: none;
+    border-radius: 0.5rem;
+    background-color: #4eb09a;
+    height: 3.5rem;
+    margin: 1.5rem auto;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu_Servicios a {
+    width: 100%;
+  }
+
+  .menu_Servicios a:hover {
+    color: #0d523a;
+  }
+
+  /****** PÁGINA SERVICIOS *******/
+  .main-servicios section {
+    height: 24rem;
+  }
+
+  /* .main-servicios h2 {
+    font-size: 4rem;
+  } */
+
+  .servicios-info p {
+    padding: 3rem 4rem;
+    text-align: justify;
+  }
+
+  .carac-beneficios {
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .beneficios {
+    margin-top: 0rem;
+    width: calc(100% / 2);
+    margin:2%;
+    padding:20px;
+  }
+
+  .caracteristicas {
+    text-align: justify;
+    width: calc(100% / 2);
+    margin:2%;
+    padding:20px;
+  }
+
+  .caracteristicas .descripcion-500 {
+    color: rgb(100 116 139/1);
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .img-carac,
+  .img-benef {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .iniciar-proyecto {
+    height: 18rem;
+    padding: 4rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .iniciar-proyecto h2 {
+    font-size: 2.5rem;
+  }
+
+  .iniciar-proyecto p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 1rem;
+  }
+
+  .iniciar-proyecto a {
+    margin-top: 1.5rem;
+  }
+}
+/* Pagina de error 404  --------------------------------------------------------------------*/
+.Error404 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+.tituloError404 {
+  text-align: center;
+  font-size: 50px;
+  font-family: RubikMonoOne-Regular;
+  color: #4eb09a;
+}
+.mensajeError404 {
+  text-align: center;
+  font-size: 24px;
+  font-family: Arimo;
+  line-height: 30px;
+  margin: 6px 0px;
+}
+.irPaginaInicio {
+  background-color: #4eb09a;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.irPaginaInicio:hover {
+  background-color: #929791;
+  cursor: pointer;
+  background: #1d976c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #93f9b9, #1d976c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #93f9b9,
+    #1d976c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

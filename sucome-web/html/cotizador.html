@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contactanos</title>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Expires" content="Thu, 01 Jan 1970 00:00:00 GMT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ponte en contacto con nosotros, escribenos a nuestro correo o dejanos tus datos"
+    />
+    <meta
+      name="keywords"
+      content="palabra clave 1, palabra clave 2, palabra clave 3"
+    />
+    <link rel="icon" href="/img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/Fuentes/stylesheet.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/fuente.css"
+    />
+    <link
+      id="css_style"
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/css/style.css?v=10.1"
+    />
+    <script
+      src="https://kit.fontawesome.com/b6135a6cd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script src="/js/script.js?v=1.1"></script>
+    <script src="/js/cotizador.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="/js/traduccion.js"></script>
+  </head>
+
+  <body>
+    <!-- /*Banner con logo /* -->
+    <header>
+      <!-- /* Menú /* -->
+      <nav>
+        <div class="nav_info">
+          <a href="/"><img src="/img/logo.jpg" class="logo" /></a>
+          <h1 class="nav_titulo">Grupo Sucome</h1>
+          <i class="fas fa-bars nav_iconMenu"></i>
+        </div>
+        <ul class="menu close_menu">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li>
+            <a href="javascript:void(0)" class="serviciosOption">Servicios ▽</a>
+            <ul
+              id="menu_servicios"
+              class="menu_Servicios menu_ServiciosClose"
+            ></ul>
+          </li>
+          <li class="active"><a href="cotizador.html">Cotizador</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- /* Contenido de la pagina /* -->
+    <main>
+      <form id="form_cotizacion" autocomplete="off">
+        <h2 class="for">Cotizador</h2>
+        <p>
+          Descríbenos el proyecto que tienes en mente para proporcionarte un
+          presupuesto que se adapte a tus necesidades, respuesta inmediata para
+          contestar tus dudas.
+        </p>
+        <label>Tipo de Obra*: </label>
+        <select id="tipo_obra" name="tipo_obra">
+          <option value="" selected>Seleccione el tipo</option>
+          <option value="Industrial">Industrial</option>
+          <option value="Residencial">Residencial</option>
+          <option value="Comercial">Comercial</option>
+          <option value="Servicios Publicos">Servicios Publicos</option></select
+        ><br />
+
+        <label>Zona Geográfica*: </label>
+        <select id="zona_geografica" name="zona_geografica">
+          <option value="" selected>Seleccione la zona</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option></select
+        ><br />
+
+        <label>Cantidad de m<sup>2</sup>*: </label>
+        <input type="number" step="0.01" name="metros" id="metros" /><br />
+
+        <label>Mensaje*: </label><br />
+        <textarea name="mensaje" id="mensaje"></textarea><br />
+        <label>Nombre de Contacto*: </label>
+        <input type="text" name="nombre" id="nombre" /><br />
+
+        <label>Empresa*: </label>
+        <input type="text" name="empresa" id="empresa" /><br />
+
+        <label>Puesto*: </label>
+        <input type="text" name="puesto" id="puesto" /><br />
+
+        <label id="num">WhatsAapp*: </label>
+        <input type="number" name="whatsapp" id="whatsapp" /><br />
+
+        <label id="corr">Correo Electrónico*: </label>
+        <input type="email" name="correo" id="correo" /><br />
+        <input type="submit" value="Enviar" class="enviar" />
+      </form>
+    </main>
+    <!-- /*pie de pagina /* -->
+    <div class="footer-marcas">
+      <h3>Grupo SUCOME</h3>
+      <div class="marcas">
+        <img class="imagen-marca" src="/img/marca_3m.jpg?v=2.1" alt="3m" />
+        <img
+          class="imagen-marca"
+          src="/img/marca_medina.jpeg?v=2.1"
+          alt="medina"
+        />
+      </div>
+    </div>
+    <div class="linea"></div>
+    <footer>
+      <div class="footer-content">
+        <!-- 
+        <ul class="socials">
+          <li>
+            <a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+          </li>
+        </ul>
+        -->
+        <div class="footer-bottom">
+          <p>Todos los derechos reservados</p>
+          <p>&copy; 2000 - 2023</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
